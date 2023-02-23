@@ -2,15 +2,13 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-int Recours(int n)
+int Recours(int n)                          //  метод рекурсивно выводит в консоль числа от n до 1
 {
-    if (n == 0)
+    if (n == 0)                             //  условие выхода из метода
         return 0;
-    else
-        Console.Write($"\t{n}");
+    Console.Write($"\t{n}");
     return Recours(n-1);
 }
-
 
 Console.Clear();				            //  очистка консоли
 Console.WriteLine("Введите число n: ");	    //  запрос числа
